@@ -1,0 +1,70 @@
+// stripping default margin/padding
+h1,
+h2,
+h3,
+p, 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+// stripping ul default styling
+ul {
+    list-style: none;
+}
+
+// stripping anchor tag default styling
+a {
+    text-decoration: none;
+    // the below means the colour will be inherited from the parent, grand-parent or great-grand-parent depending on where it has been set!
+    color: inherit;
+    @include fontSize(20);
+    transition: 0.3s;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background: $primaryBackground;
+    background-size: cover;
+    background-position: center;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+em {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+// setting font size
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include fontSize(16);
+}
+
+// wrapper styles
+.wrapper-80 {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-40 {
+    max-width: 40%;
+    margin: 0 auto;
+}
+

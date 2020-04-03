@@ -1,0 +1,10 @@
+footer {
+    @include flexCenter();
+    background: $navFooterBackground;
+    color: $primaryWhite;
+    padding: 10px 0;
+
+        a {
+            @include fontSize(16);
+        }
+}

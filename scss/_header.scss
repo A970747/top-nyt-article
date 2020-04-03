@@ -1,0 +1,27 @@
+header {
+    @include flexCenter();
+
+        div {
+            @include flexCenter();
+        }
+
+        h1, 
+        h2 {
+            margin: 0;
+        }
+
+        h1 {
+            @include fontSize(50);
+            text-transform: capitalize;
+            color: $primaryBlack;
+        }
+
+        h2 {
+            @include fontSize(35);
+            text-transform: lowercase;
+        }
+
+        figure {
+            width: 100%;
+        }
+}
